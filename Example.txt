@@ -1,5 +1,17 @@
 This is a file that will have a merge conflict.
 
-The way I'm going to force it is by making multiple branches that edit the same parts of this file.
+This second branch will cause a conflict once I merge it to the master.
 
-When this happen Git does not know which edits to use in the merge.
+When this happens git will use these strings to show where conflicts have occured.
+
+<<<<<< HEAD
+
+|||||| Merged common ancestors
+
+>>>>>> master
+
+in order to resolve the conflict all one has to do is review the sections.
+Remove the incorrect sections of code (the ancestor code is unlikely to be what I want in the merge).
+Work out what from the HEAD code needs to be put into the master code and add it.
+Then once the section is the way we want it, we delete all the special code used to separate
+the different versions of the file.
