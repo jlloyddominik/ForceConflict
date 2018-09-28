@@ -1,5 +1,4 @@
 This is a file that will have a merge conflict.
 
-When multiple branches edit the same lines of a file a conflict occurs. Git doesn't know which parts it should keep.
-
-It keeps track of three things: the sections that each branch both changed, the HEAD (which is the changes in the current branch), and the changes already merged to the master (or other parent branch)
+Now I have replaced the code in the HEAD, ancestor, and master sections with this code
+once I commit these changes and push the master branch, the conflict will be resolved. 
