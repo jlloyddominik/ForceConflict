@@ -1,5 +1,5 @@
 This is a file that will have a merge conflict.
 
-The way I'm going to force it is by making multiple branches that edit the same parts of this file.
+When multiple branches edit the same lines of a file a conflict occurs. Git doesn't know which parts it should keep.
 
-When this happen Git does not know which edits to use in the merge.
+It keeps track of three things: the sections that each branch both changed, the HEAD (which is the changes in the current branch), and the changes already merged to the master (or other parent branch)
