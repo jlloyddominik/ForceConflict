@@ -1,4 +1,9 @@
 This is a file that will have a merge conflict.
 
-Now I have replaced the code in the HEAD, ancestor, and master sections with this code
-once I commit these changes and push the master branch, the conflict will be resolved. 
+
+
+The way I'm going to force it is by making multiple branches that edit the same parts of this file.
+
+
+
+When this happen Git does not know which edits to use in the merge.
