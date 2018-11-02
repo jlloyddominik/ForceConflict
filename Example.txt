@@ -1,5 +1,8 @@
 This is a file that will have a merge conflict.
 
-This middle section is where the conflict will occur.
+Merge conflicts occur during a merge when the same lines of files being merged have been edited by two different sources.
+This usually occurs when multiple branches are being merged into a parent branch (for me this has usually occurred while merging to the master)
+Sometimes this also happens during a pull if the branch you are pulling has changed since you started editing your local version of the branch.
+
 
 In this report I will be demonstrating a merge conflict caused by merging two different branches into the master.
