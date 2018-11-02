@@ -1,5 +1,20 @@
 This is a file that will have a merge conflict.
 
-This middle section is where the conflict will occur.
+Once you try to merge two branches that have both edited the same lines of a file, git will let you know a merge conflict has occurred.
+In order to resolve these conflicts you have to pick which lines of code should remain in the newly merged branch.
+Git shows you which sections have conflicts by inserting in conflict markers.
 
+The markers look something like this (you'll see a full representation of these markers in the next screenshot):
+<<<HEAD- this marker come before the edited section from the current branch.
+===- this marker separates the two blocks of changed code.
+>>> Name-of-branch- this marker tells you the name of the branch that you are merging into the current branch.
+                    It also marks the end of that block of code.
+					
+All you have to do to fix the conflict is delete the markers and any unwanted code. 
+This might mean taking parts from both branches or picking the code from only one branch.
+Unless you know exactly which parts are necessary, it is essential to talk to the authors of the branches to work out what code should be kept.
+
+Once you've fixed the code you then must use the add command to let the merge commit know that you think you've fixed the conflict.
+Once all conflicts have been fixed, you should commit the changes and push the merged branch.
+					
 In this report I will be demonstrating a merge conflict caused by merging two different branches into the master.
